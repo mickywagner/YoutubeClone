@@ -10,22 +10,68 @@
     grid-template-areas: "a a a"
                          "b b c"
                          "b b c";
-    grid-template-rows: 50px 1fr;
+    grid-template-rows: 60px 1fr;
 }
 
 
 #page > header {
     grid-area: a;
-    background: blue;
-
+    background: white;
+    color: black;
 }
 
 #page > #mainVid {
     grid-area: b;
-    background: red;
+    background: lightgray;
+    border: 1px solid black;
 }
 
 #page > #relatedVids {
     grid-area: c;
-    background: yellow;
+    background: lightgray;
+    border: 1px solid blue;
+}
+
+/* Navigation */
+
+nav {
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+li {
+    flex: 1;
+    text-align: right;
+}
+
+#search {
+    flex: 10;
+    margin-left: 100px;
+    margin-right: 150px;
+}
+
+#logo, #barMenu{
+    text-align: left;
+}
+
+#logo {
+    min-width: 100px;
+}
+
+#logo i {
+    color: red;
+    font-size: 1.3em;
+}
+
+input {
+    width: 500px;
+    padding: 5px;
+    font-size: 1em;
 }
