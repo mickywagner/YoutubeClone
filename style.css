@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#page {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-areas: "a a a"
+                         "b b c"
+                         "b b c";
+    grid-template-rows: 50px 1fr;
+}
+
+
+#page > header {
+    grid-area: a;
+    background: blue;
+
+}
+
+#page > #mainVid {
+    grid-area: b;
+    background: red;
+}
+
+#page > #relatedVids {
+    grid-area: c;
+    background: yellow;
+}
