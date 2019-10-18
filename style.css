@@ -3,6 +3,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #page {
@@ -24,8 +25,6 @@
 #page > #mainVid {
     grid-area: b;
     background: rgb(249,249,249);
-    display: flex;
-    justify-content: center;
     flex-direction: column;
 }
 
@@ -107,6 +106,7 @@ video {
     flex-direction: column;
 }
 
+
 .related {
     display: flex;
     flex-direction: row;
@@ -115,10 +115,43 @@ video {
 }
 
 .related video {
-    width: 50%;
+    width: 40%;
 }
 
-.about {
-    padding: 10px;
+.info {
+    padding: 0 10px;
+}
 
+.info h1 {
+    font-weight: 600;
+    font-size: 1.2em;
+    padding-bottom: 5px;
+}
+
+.info h3 {
+    color: gray;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+
+.about {
+    text-align: left;
+    padding: 10px 0 40px 0;
+    width: 97%;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(199, 199, 199);
+}
+
+
+/* 
+======================================
+Comments
+======================================
+*/
+
+#comments {
+    width: 97%;
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
 }
