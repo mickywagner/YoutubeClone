@@ -193,6 +193,33 @@ Main Video Info
     font-size: .9em;
 }
 
+.share {
+    font-size: .8em;
+    text-transform: uppercase;
+    color: gray;
+    float: right;
+}
+
+
+.share li {
+    margin: 0;
+    padding: 0 5px 10px 20px;
+    margin-top: -30px;
+    flex: none;
+    text-align: right;
+}
+
+.share li:first-of-type {
+    border-bottom: 2px solid rgb(85, 83, 83);
+}
+
+
+.share li:hover {
+    cursor: pointer;
+
+}
+
+
 .about {
     text-align: left;
     padding: 10px 0 20px 0;
@@ -200,6 +227,7 @@ Main Video Info
     margin: 0 auto;
     margin-bottom:20px;
     border-bottom: 1px solid rgb(199, 199, 199);
+    clear: both;
 }
 
 .about i {
@@ -309,6 +337,7 @@ Comments
     margin-top: 10px;
     font-size: .9em;
     line-height: 1.75em;
+    width: 90%;
 }
 
 
