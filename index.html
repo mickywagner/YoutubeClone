@@ -1,125 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="style.css" rel="stylesheet" type="text/css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://kit.fontawesome.com/c362ea9f56.js"></script>
     <title>Fake Youtube</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="page">
-        <header>
-            <nav>
-                <ul>
-                    <li id="barMenu"><i class="fas fa-bars"></i></li>
-                    <li id="logo"><i class="fab fa-youtube"></i>YouTube</li>
-                    <li id="search"><input type="text" placeholder="Search"></li>
-                    <li><i class="fas fa-video"></i></li>
-                    <li><i class="fas fa-th"></i></li>
-                    <li><i class="fas fa-bell"></i></li>
-                    <li><i class="fas fa-user-circle"></i></li>
-                </ul>
-            </nav>
-        </header>
-        <section id="mainVid">
-            <div id="vidContainer">
-                <video controls>
-                    <source src="assets/15sec_TheRoad_final.mp4" type="video/mp4">
-                    Your browser does not support video.
-                </video>
-            </div>
-            <div class="about">
-                <h1>Hitching Around South America</h1>
-                <p>123,456 views</p>
-            </div>
-            <div class="about">
-                <p>Hitching around South America</p>
-            </div>
+      <header>
+        <nav>
+          <ul>
+            <li id="barMenu"><i class="fas fa-bars"></i></li>
+            <li id="logo"><i class="fab fa-youtube"></i>YouTube</li>
+            <li id="search"><input type="text" placeholder="Search" /></li>
+            <li><i class="fas fa-video"></i></li>
+            <li><i class="fas fa-th"></i></li>
+            <li><i class="fas fa-bell"></i></li>
+            <li><i class="fas fa-user-circle"></i></li>
+          </ul>
+        </nav>
+      </header>
+      <section id="mainVid">
+        <div id="vidContainer">
+          <video controls poster="http://westofmooneastofsun.com/wp-content/uploads/2014/12/IMG_4529-1024x682.jpg">
+            <source src="assets/15sec_TheRoad_final.mp4" type="video/mp4"  />
+            Your browser does not support video.
+          </video>
+        </div>
+        <div class="title">
+          <h1>Hitching Around South America</h1>
+          <p>123,456 views &#8226; Oct 14, 2015</p>
+
+        </div>
+        <div class="about">
+          <button>Subscribe</button>  
+          <i class="fas fa-user-circle"></i>
+          <h3>eruvandë <br><span>12K subscribers</span></h3>
+          <p>A jumble of clips from me hitchhiking around South America, mostly Brazil, and even a little bit of Caribbean sailing adventures. Good times. </p>
+        </div>
+
         <section id="comments">
-                10 Comments
+          <h1>5 Comments</h1>
+          <div class="comment">
+            <i class="fas fa-user-circle"></i>
+            <input
+              type="text"
+              name="newComment"
+              placeholder="Add a public comment..."
+            />
+          </div>
+
+          <div class="comment">
+            <i class="fas fa-user-circle"></i>
+            <h3>Name</h3>
+            <h4>2 years ago</h4>
+            <p>Some comment about the video</p>
+          </div>
+
+          <div class="comment">
+            <i class="fas fa-user-circle"></i>
+            <h3>Hitchhiker Hobo</h3>
+            <h4>3 years ago</h4>
+            <p>I once hitchhiked all around Peru, Argentina, and Bolivia. Wasn't always easy, but it was always a memorable adventure. </p>
+          </div>
+
+          <div class="comment">
+            <i class="fas fa-user-circle"></i>
+            <h3>Bob's Burgers</h3>
+            <h4>3 years ago</h4>
+            <p>Who wants to get the Impossible Burger?</p>
+          </div>
         </section>
-        </section>
-        <section id="relatedVids">
-            <h1>Up next</h1>
-            <div class="related">
-                <video>
-                    <source src="assets/15sec_TheRoad_final.mp4" type="video/mp4">
-                    Your browser does not support video.
-                </video>
-                <div class="info">
-                    <h1>A Different Video You Should Watch</h1>
-                    <h3>Video Creator</h3>
-                    <h3>4,672 Views</h3>
-                </div>
-            </div>
-            <div class="related">
-                <video>
-                    <source src="assets/15sec_TheRoad_final.mp4" type="video/mp4">
-                    Your browser does not support video.
-                </video>
-                <div class="info">
-                        <h1>A Different Video You Should Watch</h1>
-                        <h3>Video Creator</h3>
-                        <h3>4,672 Views</h3>
-                    </div>
-            </div>
+      </section>
+      <section id="relatedVids">
+        <h1>Up next</h1>
+        <div class="related">
+          <video poster="http://westofmooneastofsun.com/wp-content/uploads/2015/10/IMG_8749-1024x682.jpg">
+            <source src="assets/15sec_TheRoad_final.mp4" type="video/mp4" />
+            Your browser does not support video.
+          </video>
+          <div class="info">
+            <h1>A Different Video You Should Watch</h1>
+            <h3>Video Creator</h3>
+            <h3>4,672 Views</h3>
+          </div>
+        </div>
+        <div class="related">
+          <video poster="https://live.staticflickr.com/5221/14095146782_f5fa1d73dc_b.jpg">
+            <source src="assets/15sec_TheRoad_final.mp4" type="video/mp4" />
+            Your browser does not support video.
+          </video>
+          <div class="info">
+            <h1>A Different Video You Should Watch</h1>
+            <h3>Video Creator</h3>
+            <h3>4,672 Views</h3>
+          </div>
+        </div>
 
-            <div class="related">
-                <video >
-                    <source src="assets/15sec_TheRoad_final.mp4" type="video/mp4">
-                    Your browser does not support video.
-                </video>
-                <div class="info">
-                        <h1>A Different Video You Should Watch</h1>
-                        <h3>Video Creator</h3>
-                        <h3>4,672 Views</h3>
-                    </div>
-            </div>
+        <div class="related">
+          <video poster="https://live.staticflickr.com/5458/13911586447_567eea8a74_b.jpg">
+            <source src="assets/15sec_TheRoad_final.mp4" type="video/mp4" />
+            Your browser does not support video.
+          </video>
+          <div class="info">
+            <h1>A Different Video You Should Watch</h1>
+            <h3>Video Creator</h3>
+            <h3>4,672 Views</h3>
+          </div>
+        </div>
 
-            <div class="related">
-                <video>
-                    <source src="assets/15sec_TheRoad_final.mp4" type="video/mp4">
-                    Your browser does not support video.
-                </video>
-                <div class="info">
-                        <h1>A Different Video You Should Watch</h1>
-                        <h3>Video Creator</h3>
-                        <h3>4,672 Views</h3>
-                    </div>
-            </div>
+        <div class="related">
+          <video poster="http://westofmooneastofsun.com/wp-content/uploads/2014/11/IMG_4503-1024x682.jpg">
+            <source src="assets/15sec_TheRoad_final.mp4" type="video/mp4" />
+            Your browser does not support video.
+          </video>
+          <div class="info">
+            <h1>A Different Video You Should Watch</h1>
+            <h3>Video Creator</h3>
+            <h3>4,672 Views</h3>
+          </div>
+        </div>
 
-            <div class="related">
-                <video>
-                    <source src="assets/15sec_TheRoad_final.mp4" type="video/mp4">
-                    Your browser does not support video.
-                </video>
-                <div class="info">
-                        <h1>A Different Video You Should Watch</h1>
-                        <h3>Video Creator</h3>
-                        <h3>4,672 Views</h3>
-                    </div>
-            </div>
+        <div class="related">
+          <video poster="http://westofmooneastofsun.com/wp-content/uploads/2014/12/IMG_4899-1024x682.jpg">
+            <source src="assets/15sec_TheRoad_final.mp4" type="video/mp4" />
+            Your browser does not support video.
+          </video>
+          <div class="info">
+            <h1>A Different Video You Should Watch</h1>
+            <h3>Video Creator</h3>
+            <h3>4,672 Views</h3>
+          </div>
+        </div>
 
-            <div class="related">
-                <video >
-                    <source src="assets/15sec_TheRoad_final.mp4" type="video/mp4">
-                    Your browser does not support video.
-                </video>
-                <div class="info">
-                        <h1>A Different Video You Should Watch</h1>
-                        <h3>Video Creator</h3>
-                        <h3>4,672 Views</h3>
-                    </div>
-            </div>
-        </section>
+        <div class="related">
+          <video poster="http://westofmooneastofsun.com/wp-content/uploads/2015/10/IMG_8909-1024x682.jpg">
+            <source src="assets/15sec_TheRoad_final.mp4" type="video/mp4" />
+            Your browser does not support video.
+          </video>
+          <div class="info">
+            <h1>A Different Video You Should Watch</h1>
+            <h3>Video Creator</h3>
+            <h3>4,672 Views</h3>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <script src="script.js">
-    </script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>

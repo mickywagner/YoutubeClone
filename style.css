@@ -9,10 +9,12 @@
 #page {
     display: grid;
     width: 100%;
+    min-width: 910px;
     grid-template-areas: "a a a"
                          "b b c"
                          "b b c";
     grid-template-rows: 60px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 
@@ -33,7 +35,11 @@
     background: rgb(249,249,249);   
 }
 
-/* Navigation */
+/*
+====================================
+ Navigation 
+====================================
+*/
 
 nav {
     padding: 10px;
@@ -84,7 +90,11 @@ input {
     font-size: 1em;
 }
 
-/* Main Video Section */
+/* 
+===================================
+Main Video Section 
+===================================
+*/
 
 #vidContainer {
     padding: 10px;
@@ -94,37 +104,62 @@ video {
    width: 100%;
 }
 
+video:focus {
+    outline: none;
+}
+
+video[poster] {
+    object-fit: cover;
+}
+
 #vidContainer h1 {
     border-bottom: 1px solid rgb(199, 199, 199);
 }
 
 
-/* Video Sidebar */
+/* 
+====================================
+Video Sidebar
+====================================
+ */
 
 #relatedVids {
     display: flex;
     flex-direction: column;
 }
 
+h1 {
+    font-weight: 400;
+    font-size: 1em;
+    padding: 10px 0 0 10px;
+}
+
+.related:first-of-type {
+    border-bottom: 1px solid rgb(199, 199, 199)
+}
 
 .related {
     display: flex;
     flex-direction: row;
-    padding: 10px;
-    font-size: .8em;;
+    font-size: .8em;
+    font-weight: 400;
+    margin: 0 10px 0 10px;
+    padding: 10px 0;
 }
 
 .related video {
     width: 40%;
 }
 
+
 .info {
     padding: 0 10px;
 }
 
 .info h1 {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.2em;
+    padding: 0;
     padding-bottom: 5px;
 }
 
@@ -134,13 +169,79 @@ video {
     font-size: 1em;
 }
 
+/* 
+=======================================
+Main Video Info 
+=======================================
+*/
 
-.about {
-    text-align: left;
-    padding: 10px 0 40px 0;
+.title {
     width: 97%;
     margin: 0 auto;
     border-bottom: 1px solid rgb(199, 199, 199);
+}
+
+.title h1 {
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.title p {
+    color: gray;
+    margin-bottom: 15px;
+    font-size: .9em;
+}
+
+.about {
+    text-align: left;
+    padding: 10px 0 20px 0;
+    width: 97%;
+    margin: 0 auto;
+    margin-bottom:20px;
+    border-bottom: 1px solid rgb(199, 199, 199);
+}
+
+.about i {
+    font-size: 3em;
+    color:lightskyblue;
+    padding: 5px 0 0 10px;
+    float: left;
+}
+
+.about h3 {
+    float: left;
+    margin-left: 10px;
+    font-size: .9em;
+    padding: 10px 0;
+}
+
+span {
+    color: gray;
+    font-weight: 400;
+    font-size: .9em;
+}
+
+.about p {
+    width: 90%;
+    padding: 10px 0;
+    margin-left: 70px;
+    clear: both;
+    font-size: .9em;
+    line-height: 1.75em;
+}
+
+button {
+    background: rgb(202, 14, 14);
+    color: white;
+    font-weight: 400;
+    border: none;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-size: .9em;
+    float: right;
+    border-radius: 2px;
+    cursor: pointer;
 }
 
 
@@ -155,3 +256,59 @@ Comments
     margin: 0 auto;
     padding: 10px 0 10px 0;
 }
+
+#comments input {
+    width: 90%;
+    padding: 20px 0 10px 0;
+    float: right;
+    border: none;
+    background: rgb(249,249,249); 
+    border-bottom: 1px solid rgb(199, 199, 199);
+}
+
+#comments input:focus {
+    outline: none;
+}
+
+#comments h1 {
+    font-weight: 400;
+}
+
+.comment:first-of-type {
+    margin-top: 2px;
+}
+
+.comment {
+    clear: both;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+.comment i {
+    font-size: 3em;
+    width: 10%;
+    float: left;
+    padding: 5px;
+    color: lightblue;
+}
+
+.comment h3 {
+    font-weight: 600;
+    font-size: .8em;
+    float: left;
+    padding: 0 5px 0 0;
+}
+
+.comment h4 {
+    color: gray;
+    font-weight: 400;
+    font-size: .8em;
+}
+
+.comment p {
+    margin-top: 10px;
+    font-size: .9em;
+    line-height: 1.75em;
+}
+
+
