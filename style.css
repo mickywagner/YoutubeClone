@@ -8,13 +8,12 @@
 
 #page {
     display: grid;
-    width: 100%;
-    min-width: 910px;
+    max-width: 100vw; 
+    min-width: 800px;
     grid-template-areas: "a a a"
                          "b b c"
                          "b b c";
-    grid-template-rows: 60px 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 
@@ -22,6 +21,7 @@
     grid-area: a;
     background: white;
     color: black;
+    max-width: 100vw;
 }
 
 #page > #mainVid {
@@ -43,6 +43,7 @@
 
 nav {
     padding: 10px;
+    min-width: 800px;
 }
 
 ul {
@@ -54,42 +55,29 @@ ul {
 }
 
 li {
-    flex: 1;
-    text-align: right;
     margin-right: 15px;
 }
 
-#search {
-    flex: 10;
-    margin-left: 100px;
-    margin-right: 150px;
-}
-
-#logo, #barMenu{
-    text-align: left;
-}
-
-#logo {
-    min-width: 150px;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: -2px;
-    font-weight: bold;
-}
-
-#logo i {
-    color: red;
-    font-size: 1.3em;
-    position: relative;
-    top: 2px;
-    margin-right: 2px;
-}
-
 input {
-    width: 500px;
     padding: 5px;
     font-size: 1em;
+    width: 100%;
 }
 
+.fa-youtube {
+    color: red;
+}
+
+#search {
+    margin: 0 20px;
+    margin-right: auto;
+    width: 50%;
+    
+}
+
+.fa-video {
+    margin-left: auto;
+}
 /* 
 ===================================
 Main Video Section 
