@@ -14,7 +14,9 @@ This was the second project on the course and the idea was to just practice usin
 
 <h3>Technical Sheet</h3>
 
+<strong>
 <ul>
   <li>HTML 5 - Video Player</li>
   <li>CSS 3 - Flexbox, Grid</li>
 </ul>
+</strong>
