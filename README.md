@@ -2,7 +2,7 @@
 
 <h3>Screenshots</h3>
 <img src="/assets/MainVid.png/">
-<img src="/assets/VidPlayer.png/">
+<img src="app.gif">
 
 <h3>About This Project</h3>
 <p>This is an HTML/CSS only Youtube Clone I did for a project while working my way through the HTML/CSS course that's part of the Full Stack Javascript track on <a href="https://www.theodinproject.com/">Odin Project</a>.
