@@ -1,7 +1,6 @@
 # YoutubeClone
 
 <h3>Screenshots</h3>
-<img src="/assets/MainVid.png/">
 <img src="app.gif">
 
 <h3>About This Project</h3>
